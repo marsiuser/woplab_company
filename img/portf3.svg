@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit Оценочная версия) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="56.1248mm" height="49.6691mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 430.31 380.81"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#D9D9D9;stroke-width:0.65;stroke-miterlimit:22.9256}
+    .str1 {stroke:#666666;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+    .fil1 {fill:black;fill-opacity:0.231373}
+   ]]>
+  </style>
+    <clipPath id="id0">
+     <path d="M3.07 90.76l427.24 0 0 290.05 -427.24 0 0 -290.05z"/>
+    </clipPath>
+    <clipPath id="id1">
+     <rect x="15.96" y="98.23" width="403.77" height="265.59"/>
+    </clipPath>
+    <clipPath id="id2">
+     <path d="M141.5 146.56l139.51 -7.25 93.08 108.68 45.57 50.89 0 3.14 -148.85 43.41 -270.81 0 0 -181.83 15.96 -0.36 0.11 -3.44 45.39 -12.39 80.03 -0.85z"/>
+    </clipPath>
+    <clipPath id="id3">
+     <rect x="15.96" y="0.33" width="403.77" height="266.08"/>
+    </clipPath>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_3066702480368">
+   <g style="clip-path:url(#id0)">
+    <image x="3.07" y="90.76" width="427.24" height="290.05" xlink:href="portf3_Images\portf3_ImgID1.png"/>
+   </g>
+   <path class="fil0 str0" d="M16.08 159.8l222.42 -60.93c0,0 1.28,0.25 1.28,0.12 0,-0.12 179.92,200.49 179.92,200.49"/>
+   <g style="clip-path:url(#id1)">
+    <image x="15.96" y="98.23" width="403.77" height="265.59" xlink:href="portf3_Images\portf3_ImgID2.png"/>
+   </g>
+   <g style="clip-path:url(#id2)">
+    <image x="-0" y="139.31" width="419.66" height="206.12" xlink:href="portf3_Images\portf3_ImgID3.png"/>
+   </g>
+   <g style="clip-path:url(#id3)">
+    <image x="15.96" y="0.33" width="403.77" height="266.08" xlink:href="portf3_Images\portf3_ImgID4.png"/>
+   </g>
+   <polygon class="fil1" points="15.96,65.33 15.96,61.59 195.36,262.39 419.58,200.95 419.58,204.58 195.37,266.12 "/>
+   <polygon class="fil1" points="16.19,163.27 16.19,159.53 196.05,360.12 419.41,298.56 419.41,302.19 196.05,363.85 "/>
+   <path class="fil0 str0" d="M15.96 61.26l222.42 -60.93c0,0 1.28,0.25 1.28,0.13 0,-0.13 179.92,200.49 179.92,200.49"/>
+   <path class="fil0 str1" d="M325.28 42.23l25.45 0 0 27.29m-247.28 247.83l-27.84 0 0 -27.17"/>
+  </g>
+ </g>
+</svg>

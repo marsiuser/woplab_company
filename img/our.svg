@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit Оценочная версия) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100.75mm" height="97.0177mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1519.47 1463.17"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:black}
+   ]]>
+  </style>
+     <clipPath id="id0">
+      <path d="M-0 0l1141.71 0 0 1324.42 -1141.71 0 0 -1324.42z"/>
+     </clipPath>
+    <clipPath id="id1">
+     <rect x="74.13" y="73.25" width="993.93" height="1177.02"/>
+    </clipPath>
+     <clipPath id="id2">
+      <path d="M369.62 130.59l1149.85 0 0 1332.58 -1149.85 0 0 -1332.58z"/>
+     </clipPath>
+    <clipPath id="id3">
+     <rect x="444.05" y="205.28" width="1001.4" height="1183.25"/>
+    </clipPath>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2394408021808">
+   <g>
+    <g style="clip-path:url(#id0)">
+     <image x="-0" y="0" width="1141.71" height="1324.42" xlink:href="our_Images\our_ImgID1.png"/>
+    </g>
+   </g>
+   <polygon class="fil0" points="74.46,185.05 74.46,1239.79 93.41,1249.96 1067.25,1139.37 1067.25,84.63 1048.3,74.46 "/>
+   <g style="clip-path:url(#id1)">
+    <image x="74.13" y="73.25" width="993.93" height="1177.02" xlink:href="our_Images\our_ImgID2.png"/>
+   </g>
+   <g>
+    <g style="clip-path:url(#id2)">
+     <image x="369.62" y="130.59" width="1149.85" height="1332.58" xlink:href="our_Images\our_ImgID3.png"/>
+    </g>
+   </g>
+   <path class="fil0" d="M444.61 1378.01l18.95 10.17 974.56 -117.71 6.35 -1054.72 -18.95 -10.17 -974.56 117.71c0,0 -6.35,1054.72 -6.35,1054.72z"/>
+   <g style="clip-path:url(#id3)">
+    <image x="444.05" y="205.28" width="1001.4" height="1183.25" xlink:href="our_Images\our_ImgID4.png"/>
+   </g>
+  </g>
+ </g>
+</svg>

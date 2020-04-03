@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit Оценочная версия) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="56.9131mm" height="45.0864mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 368.15 291.65"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#F7F7F7;stroke-width:2.19;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .fil5 {fill:#F7F7F7}
+    .fil4 {fill:black;fill-opacity:0.329412}
+    .fil6 {fill:black;fill-opacity:0.341176}
+    .fil0 {fill:url(#id3)}
+    .fil2 {fill:url(#id4)}
+    .fil3 {fill:url(#id5)}
+    .fil1 {fill:url(#id6)}
+   ]]>
+  </style>
+      <clipPath id="id0">
+       <path d="M-0 41.71l368.15 0 0 249.94 -368.15 0 0 -249.94z"/>
+      </clipPath>
+      <clipPath id="id1">
+       <path d="M122.32 89.09l113.68 -5.91 75.85 88.56 37.14 41.47 0 2.56 -121.29 35.37 -220.67 0 0 -148.17 13.01 -0.3 0.09 -2.8 36.99 -10.1 65.21 -0.69z"/>
+      </clipPath>
+     <clipPath id="id2">
+      <path d="M128.52 55.26l111.94 0 0 111.94 -111.94 0 0 -111.94z"/>
+     </clipPath>
+  <linearGradient id="id3" gradientUnits="userSpaceOnUse" x1="117.08" y1="263.21" x2="255.95" y2="6.16">
+   <stop offset="0" style="stop-opacity:1; stop-color:#368CA8"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#51B196"/>
+  </linearGradient>
+  <linearGradient id="id4" gradientUnits="userSpaceOnUse" xlink:href="#id3" x1="117.08" y1="263.21" x2="255.95" y2="6.16">
+  </linearGradient>
+  <linearGradient id="id5" gradientUnits="userSpaceOnUse" xlink:href="#id3" x1="117.08" y1="263.21" x2="255.95" y2="6.16">
+  </linearGradient>
+  <linearGradient id="id6" gradientUnits="userSpaceOnUse" xlink:href="#id3" x1="117.08" y1="263.21" x2="255.95" y2="6.16">
+  </linearGradient>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_3066624472224">
+   <g>
+    <g>
+     <g style="clip-path:url(#id0)">
+      <image x="-0" y="41.71" width="368.15" height="249.94" xlink:href="portf4_Images\portf4_ImgID1.png"/>
+     </g>
+     <polygon class="fil0" points="13.62,103.99 13.62,100.82 166.02,270.97 355.57,219 355.58,222.17 166.02,274.14 "/>
+     <polygon class="fil1" points="13.62,101.15 203.17,49.18 355.57,219.34 166.02,271.31 "/>
+     <g style="clip-path:url(#id1)">
+      <image x="7.02" y="83.18" width="341.96" height="167.96" xlink:href="portf4_Images\portf4_ImgID2.png"/>
+     </g>
+     <polygon class="fil2" points="13.62,54.77 13.62,51.6 166.02,221.75 355.57,169.78 355.58,172.95 166.02,224.92 "/>
+     <polygon class="fil3" points="13.62,51.97 203.17,0 355.57,170.15 166.02,222.12 "/>
+     <polygon class="fil4" points="13.62,103.99 13.62,100.82 166.02,270.97 355.57,219 355.58,222.17 166.02,274.14 "/>
+    </g>
+    <g style="clip-path:url(#id2)">
+     <image x="128.52" y="55.26" width="111.94" height="111.94" xlink:href="portf4_Images\portf4_ImgID3.png"/>
+    </g>
+    <polygon class="fil5 str0" points="177.71,149.83 177.71,117.84 145.89,117.84 145.89,104.45 177.71,104.45 177.71,72.63 191.26,72.63 191.26,104.45 223.09,104.45 223.09,117.84 191.26,117.84 191.26,149.83 "/>
+   </g>
+   <polygon class="fil6" points="13.62,54.77 13.62,51.6 166.02,221.75 355.57,169.78 355.58,172.96 166.02,224.92 "/>
+  </g>
+ </g>
+</svg>
