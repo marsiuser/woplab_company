@@ -146,8 +146,9 @@ header{
     padding-top: 276px;
 }
 
-.perfection__next_section img{
+.perfection__next_section svg{
     width: 52px;
+    fill: #3d3d3d;
 }
 
 .services,
@@ -520,7 +521,7 @@ button.owl-prev {
     max-width: 194px;
 }
 
-.contacts .contacts_form .contacts__social_icons img{
+.contacts .contacts_form .contacts__social_icons svg{
     width: 40px;
     height: auto;
 }
@@ -678,7 +679,7 @@ footer .footer_part .footer_logo{
     width: 12%;
 }
 
-.footer_part .footer_social_icons img{
+.footer_part .footer_social_icons svg{
     width: 40px;
     height: auto;
     cursor: pointer;
@@ -731,7 +732,35 @@ footer .footer_part .footer_logo{
 .footer_mob_addition{
     display: none;
 }
+.contact_form_section .form_contact_field input, .contact_form_section .form_contact_field_sec input,
+.contact_form_section textarea{
+    font-family: "Lucida Sans Unicode", sans-serif ;
+}
 
+.perfection__next_section svg:hover{
+   fill: #3f98a2;
+   transition: 0.3s;
+}
+
+.contacts__social_icons svg{
+      width: 40px;
+      fill: #666666;
+      outline: none;
+  }
+
+.contacts .contacts_form .contacts__social_icons svg:hover{
+    fill: #3c94a3;
+    transition: 0.2s;
+}
+
+.footer_part .footer_social_icons svg {
+    fill: #fff;
+} 
+
+.footer_part .footer_social_icons svg:hover {
+    fill: #3d3d3d;
+    transition: 0.4s;
+} 
 
 /* ---------------------MOBILE MENU ---------------- */
 .mobile_humburger {
@@ -890,11 +919,33 @@ footer .footer_part .footer_logo{
     .our_products_wrap, .header_wrap, .portfolio_wrap {
         max-width: 980px;
     }
+    .service_wrap_image{
+        width: 32%;
+    }
+    .services_wrap h2, .portfolio_wrap h2, .contacts_wrap h2, .our_products_wrap h2, .reviews_wrap h2 {
+        font-size: 45px;
+    }
+    .service_wrap_image_bc{
+        width: 35%;
+    }
+    .service_support img {
+        max-width: 270px;
+    }    
     .footer_part .footer_social_icons{
         width: 14%;
     }
-    .service_support img {
-        max-width: 375px;
+    .service__frontend_description h3, .service__support_description h3,
+    .service__backend_description h3 {
+        font-size: 56px;
+    }
+    .service_frontend, .service_backend{
+        justify-content: space-around;
+    }
+    .service_wrap_image_sup {
+        max-width: 400px;
+    }
+    .service_support {
+        max-width: 730px;
     }
     .header_logo {
         width: 16.1%;
@@ -906,15 +957,15 @@ footer .footer_part .footer_logo{
         width: 49%;
     }
     .contacts_form .down_side_cont_right {
-        right: -241px;
-        width: 32%;
+        right: -141px;
+        width: 23%;
     }
     .contacts .contacts_form{
-        width: 80%;
+        width: 65%;
     }
     .contacts_form .up_side_cont_right_sm {
         top: -125px;
-        right: -167px;
+        right: -106px;
         width: 10%;
     }
     .footer_bg{
@@ -941,32 +992,68 @@ footer .footer_part .footer_logo{
     }
     .contacts_form .down_side_cont_left {
         top: 58px;
-        left: -219px;
-        width: 20.6%;
+        left: -119px;
+        width: 17.6%;
         transform: rotate(9deg);
     }
     .contacts_form .up_side_contact {
-        top: -89px;
-        left: -72px;
-        width: 13%;
+        top: -56px;
+        left: -50px;
+        width: 12%;
+    }
+    .right_up_side_contact{
+        right: -61px;
+        width: 16%;
     }
     .contacts_form .up_side_cont_middle {
         top: -289px;
-        left: -186px;
+        left: -107px;
         width: 14%;
     }
     .contacts_form .up_side_cont_small {
         top: -103px;
-        left: -160px;
+        left: -84px;
         width: 5%;
     }
     .perfection_content {
         max-width: 998px;
         margin: 0 auto;
     }
+    .service__frontend_description h3, .service__support_description h3, .service__backend_description h3 {
+        font-size: 42px;
+    }
+    .service_backend {
+        padding-top: 25px;
+    }
+    .service_support {
+        margin-top: 40px;
+    }
+    .portfolio_items_slider .potfolio_item_wrap .porfolio_item {
+        padding-bottom: 50px;
+        width: 30%;
+    }
+    .portfolio_items_slider .potfolio_item_wrap{
+        justify-content: space-around;
+    }
+    .our_product_description h3 {
+        font-size: 38px;
+    }
+    .our_products_part .product_image_wrap {
+        width: 45%;
+    }
+    .our_product_description p{
+        font-size: 18px;
+    }
+    .review_item .review_item_avatar{
+        width: 120px;
+        height: 120px;
+    }
 }
 
 @media(max-width: 1110px){
+    .contacts .contacts_form{
+        width: 80%;
+    }
     .services_wrap, .reviews_wrap, .contacts_wrap, .our_products_wrap, .portfolio_wrap, .perfection {
         max-width: 780px;
     }
@@ -1010,13 +1097,6 @@ footer .footer_part .footer_logo{
     .portfolio_items_slider {
         max-width: 623px;
     }
-    .portfolio_items_slider .potfolio_item_wrap .porfolio_item{
-        padding-bottom: 50px;
-        width: 40%;
-    }
-    .portfolio_items_slider .potfolio_item_wrap{
-        justify-content: space-around;
-    }
     .service_wrap_image,
     .service_wrap_image_bc{
         width: 40%;
@@ -1027,20 +1107,6 @@ footer .footer_part .footer_logo{
     .service_wrap_image_sup{
         width: 46%;
     }    
-    .service_backend {
-        padding-top: 45px;
-    }
-    .service_support {
-        margin-top: 45px;
-    }
-    .services_wrap h2, .portfolio_wrap h2, .contacts_wrap h2,
-    .our_products_wrap h2, .reviews_wrap h2{
-        font-size: 45px;
-    }
-    .service__frontend_description h3, .service__support_description h3,
-    .service__backend_description h3{
-        font-size: 55px;
-    }
     .portfolio_wrap{
         padding: 130px 0px 0px;
     }
@@ -1050,15 +1116,12 @@ footer .footer_part .footer_logo{
     .contacts .contacts_wrap {
         padding-top: 40px;
     }
-    .our_product_description h3{
-        font-size: 38px;
-    }
     .our_products_part{
         padding-left: 0px;
     }
-    .our_products_part .product_image_wrap {
+    /* .our_products_part .product_image_wrap {
         width: 45%;
-    }
+    } */
     .our_product_description p {
         font-size: 18px;
     }
@@ -1186,6 +1249,7 @@ footer .footer_part .footer_logo{
     }
     .our_products_part{
         flex-direction: column-reverse;
+        padding-top: 40px;
     }
     .our_products_part .our_product_description {
         width: 100%;
@@ -1220,9 +1284,12 @@ footer .footer_part .footer_logo{
         max-width: 150px;
         margin-bottom: 40px;
     }
-    .contacts .contacts_form .contacts__social_icons img {
+    .contacts .contacts_form .contacts__social_icons svg {
         width: 30px;
     }    
+    .contacts .contacts_form .contacts__social_icons img {
+        width: 30px;
+    }
     .contacts .contacts_form {
         width: 90%;
         padding-top: 240px;
@@ -1301,17 +1368,21 @@ footer .footer_part .footer_logo{
 }
 
 @media(max-width: 580px){
-    .services_wrap, .reviews_wrap, .contacts_wrap, .our_products_wrap,
+    .services_wrap, .reviews_wrap, .our_products_wrap,
     .portfolio_wrap, .perfection, .header_wrap, .footer_wrap{
        width: 100%;
        padding-left: 30px;
        padding-right: 30px;
     }
+    .contacts_wrap{
+        padding: 0px;
+        max-width: 580px;
+    }
     .description_way a {
         padding: 15px 20px;
         margin: 23px 0px 0px 12px;
     }
-    .perfection__next_section img {
+    .perfection__next_section svg {
         width: 35px;
     }
     .services{
@@ -1322,7 +1393,7 @@ footer .footer_part .footer_logo{
         transform: unset;
     }
     .header_bg {
-        background: url(../img/header_fon.png) no-repeat left 50% top 103px;
+        background: url(../img/header_fon.png) no-repeat left 38% top 103px;
         background-size: cover;
         padding-bottom: 0px;
     }
@@ -1338,6 +1409,12 @@ footer .footer_part .footer_logo{
     }
     .service_wrap_image_bc {
         width: 60%;
+    }
+    .description_way h1{
+        padding-bottom: 22px;
+    }
+    .perfection{
+        padding-bottom: 35px;
     }
     .portfolio{
         padding-top: 70px;
@@ -1374,7 +1451,7 @@ footer .footer_part .footer_logo{
         padding-top: 275px;
     }
     .our_products_part{
-        padding-top: 50px;
+        padding-top: 10px;
     }
     .footer_menu ul {
         flex-direction: column;
@@ -1390,45 +1467,140 @@ footer .footer_part .footer_logo{
         margin-bottom: 15px;
     }
     footer .footer_part .footer_logo{
-        width: 21%;
+        width: 75px;
     }
     .footer_part .footer_social_icons {
-        width: 46%;
-    }    
+        width: 144px;
+        justify-content: space-around;
+        transform: translateY(-10px);
+    }
     .reviews_wrap .all_reviews_wrap .review_item .review_context{
-        padding: 20px 30px 30px;
+        padding: 20px 30px 45px;
     }
     .portfolio_items_slider .potfolio_item_wrap .porfolio_item{
         width: 35%;
     }
-    .all_reviews_wrap .review_item:nth-child(2n+1) .review_context .review_item_avatar{
-        top: -46px;
-        left: 15px;
-    }
     .all_reviews_wrap  .review_item .review_text{
-        margin-top: 50px;
+        margin-top: 40px;
     }
-    .all_reviews_wrap .review_item:nth-child(2n) .review_context .review_item_avatar{
-        right: 15px;
-        top: -46px;
-    }
+
     .contacts_form .down_side_cont_left,
     .contacts_form .down_side_cont_right{
         display: none;
+    } 
+    .footer_part .footer_social_icons svg {
+        width: 30px;
+        fill: #fff;
+    }  
+    .contacts_form .up_side_cont_middle,
+    .contacts_form .up_side_cont_small,
+    .contacts_form .up_side_cont_right_sm,
+    .right_up_side_contact, .contacts_form .up_side_contact{
+        display: none;
+    }  
+}
+
+
+@media(max-width: 380px){
+    .all_reviews_wrap .review_item .review_item_avatar_ns {
+        right: -8px;
     }
-    .right_up_side_contact {
-        right: 17px;
-        top: 78px;
-    }    
-    .contacts_form .up_side_contact {
-        transform: rotate(20deg);
-        left: -15px;
+    .all_reviews_wrap .review_item:nth-child(2n+1) .review_context .review_item_avatar{
+        left: -8px;
     }
-    .contacts_form .up_side_cont_right_sm {
-        right: -14px;
-        width: 7%;
+    .header_logo img {
+        width: 70px;
     }
-    .contacts_form .up_side_cont_middle {
-        left: -14px;
-    }        
+    .header_bg {
+        background: url(../img/header_fon.png) no-repeat left 51% top 75px;
+        background-size: cover;
+    }
+    .perfection_image img {
+        width: 95%;
+    }
+    .service_wrap_image_sup {
+        width: 50%;
+    }
+    .service_wrap_image_bc {
+        width: 70%;
+    }
+    .service_wrap_image{
+        width: 60%;
+    } 
+    .portfolio_items_slider .potfolio_item_wrap .porfolio_item {
+        width: 40%;
+    }   
+    .portfolio_wrap .owl-carousel .owl-nav button.owl-prev{
+        left: 0px;
+    }
+    .portfolio_wrap .owl-carousel .owl-nav button.owl-next{
+        right: 0px;
+    }
+    .our_products_part .product_image_wrap {
+        margin-left: auto;
+        margin-top: 25px;
+        width: 70%;
+    }
+    .review_item .review_item_avatar {
+        width: 75px;
+        height: 75px;
+        border: 4px solid #fff;
+    }
+    .all_reviews_wrap .review_item:nth-child(2n+1) .review_context .review_item_avatar,
+    .all_reviews_wrap .review_item:nth-child(2n) .review_context .review_item_avatar {
+        top: -32px;
+    }
+    .reviews_wrap .all_reviews_wrap .review_item .review_context {
+        padding: 20px 10px 45px 20px;
+    }
+    .review_item .review_context .review_text h3{
+        font-size: 24px;
+    }
+    .contacts_wrap{
+        padding: 0px;
+        margin-top: -120px;
+    }
+    .contact_form_section button{
+        padding: 15px 35px;
+        font-size: 18px;
+    }
+    .footer_bg {
+        background: url(../img/footer_mob_bg.png) no-repeat top 1px left -127px;
+        background-size: cover;
+    }
+    .form_contact_field input, .form_contact_field_sec input,
+    .contact_form_section textarea {
+        margin-bottom: 20px;
+        border: 2px solid #666;
+        padding: 8px 18px 8px 22px;
+    }
+    .services_wrap h2, .portfolio_wrap h2, .contacts_wrap h2, .our_products_wrap h2, .reviews_wrap h2 {
+        font-size: 28px;
+    }
+    .contacts .contacts_form .contacts__social_icons {
+        max-width: 120px;
+    }
+    .services_wrap, .reviews_wrap, .our_products_wrap, .portfolio_wrap, .perfection, .header_wrap, .footer_wrap{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .contact_form_section{
+        padding: 0 20px;
+    }
+    .service__frontend_description h3, .service__support_description h3, .service__backend_description h3{
+        font-size: 26px;
+    }
+    .our_product_description h3 {
+        font-size: 24px;
+    }
+    .our_product_description a{
+        padding: 12px 53px;
+    }
+    .our_products {
+        padding-top: 235px;
+        margin-top: -50px;
+    }
+    .perfection__next_section img {
+        width: 30px;
+    }
 }
