@@ -15,13 +15,12 @@
                 <div class="header_logo">
                     <a href="#"><img src="img/log.svg" alt="logo"></a>
                 </div>
-                <ul class="header__menu_item">
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Работы</a></li>
-                    <li><a href="#">Продукты</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Блог</a></li>
+                <ul class="header__menu_item" id="links_menu">
+                    <li><a href="#offer">Услуги</a></li>
+                    <li><a href="#works">Работы</a></li>
+                    <li><a href="#prod">Продукты</a></li>
+                    <li><a href="#aboutus">О нас</a></li>
+                    <li><a href="#yak2">Контакты</a></li>
                 </ul>
                 <div class="mobile_menu">
                     <nav class="mobile_humburger" id="mobile_humburger">
@@ -37,12 +36,21 @@
                                 <li><a class="menu__item" href="#">Услуги</a></li>
                                 <li><a class="menu__item" href="#">Работы</a></li>
                                 <li><a class="menu__item" href="#">Продукты</a></li>
+                                <li><a class="menu__item" href="#">О нас</a></li>      
                                 <li><a class="menu__item" href="#">Контакты</a></li>
-                                <li><a class="menu__item" href="#">О нас</a></li>
-                                <li><a class="menu__item" href="#">Блог</a></li>
+                                <div class="header_choose_lang header_choose_lang_mob">
+                                    <a href="#" class="header_lan_active">рус</a>
+                                    <a href="#">укр</a>
+                                    <a href="#">en</a>
+                                </div>
                             </div>
                         </ul>
                       </nav>
+                </div>
+                <div class="header_choose_lang header_choose_lang_desktop">
+                    <a href="#">рус</a>
+                    <a href="#">укр</a>
+                    <a href="#">en</a>
                 </div>
             </div>
             <div class="perfection">
@@ -50,16 +58,16 @@
                     <div class="perfection_image">
                         <img src="img/group.png" alt="perfection">
                     </div>
-                    <div class="description_way">
+                    <div class="description_way" id="yak">
                         <h1>A way of perfection.</h1>
                         <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов,
                         но это не совсем так. Его корни уходят в один фрагмент классической латыни
                         45 года н.э., то есть более двух тысячелетий назад.</p>
-                        <a href="#">Связаться с нами</a>
+                        <a href="#yak2">Связаться с нами</a>
                     </div>
                 </div>
                 <div class="perfection__next_section" id="yakor">
-                    <a href="#yak1">
+                    <a href="#yak1" id="offer">
                         <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="52px" height="52px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                         viewBox="0 0 8.44 8.44"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -126,7 +134,7 @@
     </section>
     <section class="portfolio">
         <div class="portfolio_wrap">
-            <h2>Portfolio.</h2>
+            <h2 id="works">Portfolio.</h2>
             <div class="owl-carousel owl-theme owl-loaded">
                 <div class="portfolio_items_slider">
                     <div class="potfolio_item_wrap">
@@ -185,7 +193,7 @@
             </div>
         </div>
         <div class="dowm_bg">
-        <div class="our_products">
+        <!-- <div class="our_products">
             <div class="our_products_wrap">
                 <h2>Our products.</h2>
                 <div class="our_products_part">
@@ -200,8 +208,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="reviews">
+        </div> -->
+        <!-- <div class="reviews">
             <div class="reviews_wrap">
                 <h2>Reviews.</h2>
                 <div class="all_reviews_wrap">
@@ -237,13 +245,59 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="work_stages">
+            <div class="work_stages_wrap" id="prod">
+                <h2>Work stages.</h2>
+                <div class="work_stages_part">
+                    <div class="work_stages_description">
+                        <h3>We do 6 main stages before the site reaches full readiness.</h3>
+                        <ul class="work_item">
+                            <li><p>01</p>
+                                Competitor Analysis
+                                An analysis of the market. Monitor all possible competitors.</li>
+                            <li><p>02</p>
+                                Prototype creation
+                                Creating a prototype will determine the entire structure of your site and give a first understanding of how it will look like in the finished form.</li>
+                            <li><p>03</p>
+                                Design
+                                Develop an individual design in accordance with the subject of goods or services.</li>
+                            <li><p>04</p>
+                                Site development
+                                The latest standards are being introduced. The site will quickly and correctly work in all browsers and mobile devices. We also build in convenient administration panel for you.</li>
+                            <li><p>05</p>
+                                Testing
+                                Before launching, the site is thoroughly tested to identify and correct errors.</li>
+                            <li><p>06</p>
+                                Launch
+                                After all the steps are done, the site is prepared for launch, connects to the hosting and domain name.</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about_us">
+            <div class="our_products_wrap" id="aboutus">
+                <h2>About us.</h2>
+                <div class="our_products_part">
+                    <div class="product_image_wrap">
+                        <img src="img/our_products.png" alt="our product">
+                    </div>
+                    <div class="our_product_description" id="yak3">
+                        <h3>What is WOP lab?</h3>
+                        <p>WOP lab -  is a team that provides a full range of services for the development and support of web solutions of any complexity.</p>
+                        <p>We are not a classic IT company. We are rather a group of equal professionals who have united in a team. Our team is exclusively Ukrainian developers. We are young and purposeful, but nevertheless we have more than 5 years of experience. </p>
+                        <a href="#yak2">Contact us</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="contacts">
             <div class="contacts_wrap">
                 <div class="contacts_form">
                     <img class="up_side_contact" src="img/up_cont.svg" alt="no">
                     <img class="right_up_side_contact" src="img/right_cont_up.svg" alt="no">
-                    <h2>Contact us.</h2>
+                    <h2 id="yak2">Contact us.</h2>
                     <div class="contacts__social_icons">
                        <a href="#">
                         <svg fill="#666666" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="6.6299mm" height="5.9642mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"

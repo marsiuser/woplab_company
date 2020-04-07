@@ -26,7 +26,7 @@ header{
 .header_wrap{
     display: flex;
     padding: 15px 0px;
-    max-width: 1284px;
+    max-width: 1350px;
     margin: 0 auto;
 }
 
@@ -52,6 +52,7 @@ header{
     text-decoration:none;
     cursor: pointer;
     position:relative;
+    outline: none;
 }
 
 .header__menu_item a:after {
@@ -76,6 +77,27 @@ header{
     width: 100%;
 }
 
+.header_choose_lang a:after {
+    background-color: #fff;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    left:50%;
+    top: 20px;
+    position:absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+
+.header_choose_lang a:hover:after,
+.header_choose_lang a:focus:after {
+    width: 100%;
+}
 
 .header_bg{
     background: url(../img/header_fon.png) no-repeat right top 0px;
@@ -177,7 +199,8 @@ header{
     font-size: 65px;
 }
 .our_products_wrap h2,
-.reviews_wrap h2{
+.reviews_wrap h2,
+.work_stages_wrap h2{
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-size: 65px;
@@ -294,7 +317,8 @@ header{
     width: 100%;
 }
 
-.our_products_wrap{
+.our_products_wrap,
+.work_stages_wrap{
     max-width: 1284px;
     margin: 0 auto;
 }
@@ -390,8 +414,12 @@ button.owl-prev {
     padding-left: 22px;
 }
 
+.work_stages_part{
+    padding-top: 82px;
+}
 
-.our_product_description h3{
+.our_product_description h3,
+.work_stages_description h3{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 54px;
     color: #fff;
@@ -423,7 +451,50 @@ button.owl-prev {
     background-color: #fff;
     transition: 0.6s;
 }
+.work_stages{
+    padding: 100px 0px 0px;
+}
+.work_stages_description .work_item{
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 85px 0px;
+    max-width: 1000px;
+}
 
+.work_stages_description .work_item p{
+    font-size: 48px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 20px;
+}
+
+.work_stages_description .work_item li{
+    margin-bottom: 65px;
+    background: rgb(81,177,150);
+    background: linear-gradient(90deg, rgba(81,177,150,1) 0%, rgba(75,169,154,1) 35%, rgba(54,140,160,1) 100%);
+    font-size: 24px;
+    border-radius: 100px;
+    padding: 40px 40px 60px 50px;
+    min-height: 220px;
+    position: relative;
+}
+
+.work_stages_description .work_item li::after{
+    content: "";
+    background: url('../img/next_step.svg') no-repeat 50%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 81%;
+    right: -97px;
+    transform: scale(1, -1) rotate(-143deg);
+}
+
+.work_stages_description .work_item li:last-child::after{
+    content: '';
+    background: none;
+}
 .our_products_part .product_image_wrap{
     max-width: 672px;
     width: 50%;
@@ -696,7 +767,7 @@ footer .footer_part .footer_logo{
 }
 
 .contacts .contacts_form .contacts__social_icons a:last-child{
-    transform: translateY(7px);
+    transform: translateY(3px);
 }
 
 .footer_menu ul li:after {
@@ -761,7 +832,23 @@ footer .footer_part .footer_logo{
     fill: #3d3d3d;
     transition: 0.4s;
 } 
+.header_choose_lang{
+    margin-top: 25px;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 8%;
+}
 
+.header_choose_lang a{
+    color: #fff;
+    outline: none;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    text-decoration:none;
+    cursor: pointer;
+}
 /* ---------------------MOBILE MENU ---------------- */
 .mobile_humburger {
     display: none;
@@ -798,12 +885,36 @@ footer .footer_part .footer_logo{
        width: 65%;
    }
    .menu__box li a{
-       padding: 15px 0px;
+       padding: 13px 0px;
        max-width: 100px;
        margin: 0 auto;
    }
 }
 @media screen and (max-width: 821px) {
+    .header_choose_lang_desktop{
+        display: none;
+    }
+    .menu__box .header_choose_lang_mob{
+        width: 120px;
+        margin: 25px auto;
+    }
+    .menu__box .header_choose_lang_mob .header_lan_active{
+        color: #3d3d3d;
+        font-weight: 600;
+    }
+    .menu__box .header_choose_lang_mob a{
+        position: relative;
+    }
+    .menu__box .header_choose_lang_mob a:after{
+        position: absolute;
+        content: "|";
+        color: #fff;
+        top: 0px;
+        left: 33px;
+    }
+    .menu__box .header_choose_lang_mob a:last-child::after{
+        content: " ";
+    }
     .menu__item {
         display: block;
         padding: 12px 24px;
@@ -915,14 +1026,21 @@ footer .footer_part .footer_logo{
 }
 
 @media(max-width: 1440px){
+    .work_stages_description .work_item li{
+        font-size: 18px;
+        width: 95%;
+    }
+    .work_stages_description .work_item li::after{
+        right: -50px;
+    }
     .services_wrap, .reviews_wrap, .contacts_wrap, .footer_wrap,
-    .our_products_wrap, .header_wrap, .portfolio_wrap {
+    .our_products_wrap, .header_wrap, .portfolio_wrap, .work_stages_wrap {
         max-width: 980px;
     }
     .service_wrap_image{
         width: 32%;
     }
-    .services_wrap h2, .portfolio_wrap h2, .contacts_wrap h2, .our_products_wrap h2, .reviews_wrap h2 {
+    .services_wrap h2, .portfolio_wrap h2, .contacts_wrap h2, .our_products_wrap h2, .reviews_wrap h2, .work_stages_wrap h2 {
         font-size: 45px;
     }
     .service_wrap_image_bc{
@@ -973,7 +1091,7 @@ footer .footer_part .footer_logo{
         transform: translateY(-276px);
     }
     .header_bg {
-        background: url(../img/header_fon.png) no-repeat left 278px top -8px;
+        background: url(../img/header_fon.png) no-repeat left 278px top -32px;
         background-size: 100%;
     }
     .description_way{
@@ -1035,7 +1153,8 @@ footer .footer_part .footer_logo{
     .portfolio_items_slider .potfolio_item_wrap{
         justify-content: space-around;
     }
-    .our_product_description h3 {
+    .our_product_description h3,
+    .work_stages_description h3 {
         font-size: 38px;
     }
     .our_products_part .product_image_wrap {
@@ -1048,13 +1167,19 @@ footer .footer_part .footer_logo{
         width: 120px;
         height: 120px;
     }
+    .header_choose_lang{
+        width: 100px;
+    }
 }
 
 @media(max-width: 1110px){
+    .work_stages_description .work_item li{
+        width: 90%;
+    }
     .contacts .contacts_form{
         width: 80%;
     }
-    .services_wrap, .reviews_wrap, .contacts_wrap, .our_products_wrap, .portfolio_wrap, .perfection {
+    .services_wrap, .reviews_wrap, .contacts_wrap, .our_products_wrap, .work_stages_wrap, .portfolio_wrap, .perfection {
         max-width: 780px;
     }
     .header__menu_item{
@@ -1091,7 +1216,7 @@ footer .footer_part .footer_logo{
         width: 6%;
     }
     .header_bg {
-        background: url(../img/header_fon.png) no-repeat left 4% top 0px;
+        background: url(../img/header_fon.png) no-repeat left 1% top -42px;
         background-size: cover;
     }
     .portfolio_items_slider {
@@ -1162,9 +1287,16 @@ footer .footer_part .footer_logo{
 }
 
 @media(max-width: 820px){
-    .services_wrap, .reviews_wrap, .contacts_wrap, .our_products_wrap, .portfolio_wrap, .perfection,
+    .services_wrap, .reviews_wrap, .contacts_wrap, .our_products_wrap, .work_stages_wrap, .portfolio_wrap, .perfection,
     .header_wrap, .footer_wrap {
         max-width: 540px;
+    }
+    .work_stages_description .work_item li {
+        width: 90%;
+        min-height: 200px;
+    }
+    .work_stages_description .work_item p {
+        font-size: 32px;
     }
     .perfection_content{
         flex-direction: column;
@@ -1251,6 +1383,9 @@ footer .footer_part .footer_logo{
         flex-direction: column-reverse;
         padding-top: 40px;
     }
+    .work_stages_part{
+        padding-top: 40px;
+    }
     .our_products_part .our_product_description {
         width: 100%;
         padding-top: 20px;
@@ -1277,7 +1412,7 @@ footer .footer_part .footer_logo{
     .contact_form_section {
         padding: 0px 30px;
     }
-    .services_wrap h2, .portfolio_wrap h2, .contacts_wrap h2, .our_products_wrap h2, .reviews_wrap h2 {
+    .services_wrap h2, .portfolio_wrap h2, .contacts_wrap h2, .our_products_wrap h2, .reviews_wrap h2, .work_stages_wrap h2 {
         font-size: 36px;
     }
     .contacts .contacts_form .contacts__social_icons{
@@ -1333,7 +1468,8 @@ footer .footer_part .footer_logo{
         width: 11.6%;
         top: 190px;
     }
-    .our_product_description h3 {
+    .our_product_description h3,
+    .work_stages_description h3 {
         font-size: 28px;
     }
     .description_way h1{
@@ -1365,10 +1501,34 @@ footer .footer_part .footer_logo{
     .header_wrap{
         justify-content: space-between;
     }
+    .work_stages{
+        padding-top: 0px;
+    }
 }
 
 @media(max-width: 580px){
+    .work_stages {
+        padding: 320px 0px 0px;
+    }
+    .work_stages_description .work_item li{
+        border-radius:60px;
+        line-height: 25px;
+        padding: 30px 25px 30px 30px;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    .work_stages_description .work_item p {
+        font-size: 28px;
+    }
+    .work_stages_description .work_item li::after{
+        top: 90%;
+        transform: scale(1, -1) rotate(-137deg);
+        width: 50px;
+        height: 50px;
+        right: -29px;
+    }
     .services_wrap, .reviews_wrap, .our_products_wrap,
+    .work_stages_wrap,
     .portfolio_wrap, .perfection, .header_wrap, .footer_wrap{
        width: 100%;
        padding-left: 30px;
@@ -1453,6 +1613,9 @@ footer .footer_part .footer_logo{
     .our_products_part{
         padding-top: 10px;
     }
+    .work_stages_part{
+        padding-top: 25px;
+    }
     .footer_menu ul {
         flex-direction: column;
         align-items: center;
@@ -1502,6 +1665,14 @@ footer .footer_part .footer_logo{
 
 
 @media(max-width: 380px){
+    .work_stages_description .work_item li {
+        border-radius: 30px;
+        padding: 30px 25px 40px 30px;
+    }
+    .work_stages_description .work_item li::after{
+        right: -35px;
+        width: 35px;
+    }
     .all_reviews_wrap .review_item .review_item_avatar_ns {
         right: -8px;
     }
@@ -1574,13 +1745,13 @@ footer .footer_part .footer_logo{
         border: 2px solid #666;
         padding: 8px 18px 8px 22px;
     }
-    .services_wrap h2, .portfolio_wrap h2, .contacts_wrap h2, .our_products_wrap h2, .reviews_wrap h2 {
+    .services_wrap h2, .portfolio_wrap h2, .contacts_wrap h2, .our_products_wrap h2, .reviews_wrap h2, .work_stages_wrap h2 {
         font-size: 28px;
     }
     .contacts .contacts_form .contacts__social_icons {
         max-width: 120px;
     }
-    .services_wrap, .reviews_wrap, .our_products_wrap, .portfolio_wrap, .perfection, .header_wrap, .footer_wrap{
+    .services_wrap, .reviews_wrap, .our_products_wrap, .work_stages_wrap, .portfolio_wrap, .perfection, .header_wrap, .footer_wrap{
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -1590,8 +1761,12 @@ footer .footer_part .footer_logo{
     .service__frontend_description h3, .service__support_description h3, .service__backend_description h3{
         font-size: 26px;
     }
-    .our_product_description h3 {
+    .our_product_description h3{
         font-size: 24px;
+    }
+    .work_stages_description h3,
+    .about_us .our_product_description h3 {
+        font-size: 20px;
     }
     .our_product_description a{
         padding: 12px 53px;
